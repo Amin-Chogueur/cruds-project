@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta  name="descreption" content="products managment for desctop">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Products Managment (CRDUS)</title>
+</head>
+<body>
+    <div class="container">
+    <h1>products managment</h1>
+    <div class="head">
+        <input type="text" placeholder="title" id="title">
+        <div class="box">
+            <input onkeyup=getTotal() type="number" placeholder="price" id="price">
+            <input onkeyup=getTotal() type="number" placeholder="ads" id="ads">
+            <input onkeyup=getTotal() type="number" placeholder="taxs" id="taxs">
+            <input onkeyup=getTotal() type="number" placeholder="discount" id="discount">
+            <p id="parent">total:<span id="total"></span> </p>
+        </div><!-- box -->
+        <input type="number" placeholder="contety" id="contety">
+        <input type="text" placeholder="category" id="category">
+        <button id="create">create</button>
+        <button id="update-btn">update</button>
+        <div class="serach-btn">
+            <button id="title-search">search by title</button>
+            <button id="category-search">search by category</button>
+        </div><!-- search-btn -->
+        <input type="search"  id="search">
+        <button id="delete-all"></button>
+    </div><!-- head -->
+    <table>
+        <thead>
+            <tr>
+                <td>id</td>
+                <td>title</td>
+                <td>price</td>
+                <td>ads</td>
+                <td>taxs</td>
+                <td>discount</td>
+                <td>total</td>
+                <td>category</td>
+                <td>update</td>
+                <td>delete</td>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+            <span id="up"></span>
+        </tbody>
+    </table>
+</div><!-- container -->
+    <script src="./script.js"></script>
+</body>
+</html>

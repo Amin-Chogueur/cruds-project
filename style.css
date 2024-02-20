@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #333;
+    color: white;
+    font-family: sans-serif;
+}
+.container{
+    width: 90%;
+    margin:20px auto;
+    text-align: center;
+    text-transform: capitalize;
+}
+input{
+    background-color: black;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    color: white;
+}
+h1{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.head > input{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+.head .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+.head .box input{
+    padding: 15px;
+    margin: 5px 0;
+    border-radius: 5px;
+    width: calc(100% / 5);
+}
+.head .box p{
+    background-color: darkgreen;
+    border-radius: 5px;
+    padding: 13px;
+    width: calc(100% / 5);
+}
+
+.head .serach-btn{
+    display: flex;
+    justify-content: space-between;
+}
+#update-btn{
+    display: none;
+}
+.head > button,
+.head .serach-btn button {
+    background-color: darkgreen;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.head  > button{
+    width: 100%;
+    margin: 5px 0;
+    transition: 0.5s;
+}
+
+.head .serach-btn button{
+    width: 45%;
+    transition: 0.5s;
+}
+
+.head #delete-all{
+    display: none;
+}
+.head .serach-btn button:hover,
+.head #delete-all:hover,
+.head  > button:hover{
+    background-color: rgb(162, 2, 2);
+}
+input#search{
+    display: none;
+}
+table{
+    margin-top: 10px;
+    width: 100%;
+    text-transform: capitalize;
+    border-collapse: collapse;
+}
+table tr{
+    transition: 0.5s;
+}
+table tr:hover{
+    background-color: darkgreen;
+}
+table td{
+    border: 1px solid black;
+    padding: 15px;
+}
+table td button{
+    padding: 10px;
+    background-color: darkgreen;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+table td button:hover{
+    opacity: 0.9;
+}
+table tr:hover td button{
+    background-color: red;
+}
